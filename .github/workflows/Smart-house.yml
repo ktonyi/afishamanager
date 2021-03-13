@@ -1,6 +1,3 @@
-# This workflow will build a Java project with Maven
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
 name : Java CI # what is the name of the Workflow
 
 on : [push] # when triggered (on push)
@@ -16,5 +13,4 @@ jobs : # what tasks we do
         with:
           java-version : 11  # version to install
       - name: Build with Maven
-        run: mvn -B -e verify # запускаем Maven# This workflow will build a Java project with Maven
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+        run : mvn -B -e verify # start Maven
